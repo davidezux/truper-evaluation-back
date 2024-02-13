@@ -1,0 +1,25 @@
+# DEFAULT CONFIGURATIONS FOR ALL PROFILES
+server:
+  port: 8091
+spring:
+  application:
+    name: demo
+  datasource:
+    url : jdbc:h2:mem:test;DB_CLOSE_DELAY=-1;INIT=CREATE SCHEMA IF NOT EXISTS DEMO;
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+    initialization-mode: always
+    sqlScriptEncoding: UTF-8
+    data: classpath:db/data.sql
+  jpa:
+    platform: h2
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+    open-in-view: true
+    show-sql: true
+    format-sql: true
+    defer-datasource-initialization: true
+  h2:
+    console.enabled: true
