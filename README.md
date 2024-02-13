@@ -7,4 +7,4 @@ Para el desarrollo de un proyecto en Spring Boot se deben cumplir con los siguie
 - Git
 - Spring Tools Suite o Intellij
 
-  Para correr el proyecto basta con importat la carpeta demo dentro de su entorno de desarrollo
+* Para correr el proyecto basta con importat la carpeta demo dentro de su entorno de desarrollo
